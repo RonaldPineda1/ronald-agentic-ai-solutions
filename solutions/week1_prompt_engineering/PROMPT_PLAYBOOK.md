@@ -20,22 +20,42 @@ hallucination, verbosity, shallow, drift (format), persona-loss, json-break, con
 
 ## Results Table (Populate During Lab)
 | Prompt Pattern | Example Used | Model | Adherence (1–5) | Reasoning (1–5) | Style (1–5) | Format (1–5) | Failure Modes | Notes | Reuse? (Y/N) |
-|----------------|--------------|-------|------------------|-----------------|-------------|--------------|---------------|-------|--------------|
+| Prompt Pattern | Example Used | Model | Adherence (1–5) | Reasoning (1–5) | Style (1–5) | Format (1–5) | Failure Modes | Notes | Reuse? (Y/N) |
+|----------------|---------------|--------|------------------|-----------------|--------------|---------------|----------------|--------|---------------|
+| Simple | Explain how to make a cup of coffee. | llama3 | 5 | 5 | 5 | 5 | verbosity | used 2 methods | |
+| Role | You are a cooking instructor. Explain how to boil water to a beginner. | llama3 | 5 | 5 | 5 | 5 | | | |
+| Chain-of-Thought | Explain how to boil water step-by-step, starting with choosing a pot and ending with boiling point. | llama3 | 5 | 5 | 5 | 5 | | | |
+| Simple | Explain how to make a cup of coffee. | mistral | 5 | 5 | 5 | 5 | | | |
+| Role | You are a cooking instructor. Explain how to boil water to a beginner. | mistral | 5 | 5 | 5 | 5 | | | |
+| Chain-of-Thought | Explain how to boil water step-by-step, starting with choosing a pot and ending with boiling point. | mistral | 3 | 5 | 5 | 5 | | More consistent. Used comment instead of prompt or meaningful label | |
+| Simple | Explain how to make a cup of coffee. | gemini-flash 1.5 | 3 | 5 | 3 | 1 | drift (format) | No .md format. Didn't print original prompt. | |
+| Role | You are a cooking instructor. Explain how to boil water to a beginner. | gemini-flash 1.5 | 3 | 5 | 3 | 1 | drift (format) | No .md format. Didn't print original prompt. | |
+| Chain-of-Thought | Explain how to boil water step-by-step, starting with choosing a pot and ending with boiling point. | gemini-flash 1.5 | 3 | 5 | 3 | 1 | drift (format) | No .md format. Didn't print original prompt. | |
+| Simple | Explain how to make a cup of coffee. | claude-sonnet4.5 | 5 | 5 | 5 | 5 | | | |
+| Role | You are a cooking instructor. Explain how to boil water to a beginner. | claude-sonnet4.5 | 5 | 5 | 5 | 5 | | Motivational | |
+| Chain-of-Thought | Explain how to boil water step-by-step, starting with choosing a pot and ending with boiling point. | claude-sonnet4.5 | 5 | 5 | 5 | 5 | | Simple steps | |
+| Simple | Explain how to make a cup of coffee. | chatgpt4o | 5 | 5 | 5 | 5 | | Icons | |
+| Role | You are a cooking instructor. Explain how to boil water to a beginner. | chatgpt4o | 5 | 5 | 5 | 5 | | | |
+| Chain-of-Thought | Explain how to boil water step-by-step, starting with choosing a pot and ending with boiling point. | chatgpt4o | 5 | 5 | 5 | 5 | | | |
+| Simple | Explain how to make a cup of coffee. | chatgpt5 | 5 | 5 | 5 | 5 | | | |
+| Role | You are a cooking instructor. Explain how to boil water to a beginner. | chatgpt5 | 5 | 5 | 5 | 5 | | | |
+| Chain-of-Thought | Explain how to boil water step-by-step, starting with choosing a pot and ending with boiling point. | chatgpt5 | 5 | 5 | 5 | 5 | | | |
+                                                                  |                |
 
 ## Model Summary (After Initial Pass)
 | Capability | Best Model(s) | Evidence Snippet | Notes |
 |------------|---------------|------------------|-------|
 | Explanatory Clarity | | | |
 | Chain-of-Thought | | | |
-| JSON Adherence | | | |
 | Persona Control | | | |
 | Instruction Strictness | | | |
 
 ## Insight Log
 Record notable surprises, regressions, or improvements.
-- Day 1:
-- Day 2:
-- Day 3:
+- ollama images were only 4 to 5 GB in size aprox. Each query takes more than 2 mins to answer back.
+- Dificult to find a good prompt to see actual difference in scoring rubric.
+- 
+
 
 ---
 
@@ -70,8 +90,11 @@ Record notable surprises, regressions, or improvements.
 ## Reflection (End of Week)
 Answer briefly:
 1. Which two prompt patterns yielded the largest delta between models?
+- I notice the Chain of thought was more simple and precise.
 2. Which failure mode was most frequent? Root cause?
+- First test notice some persona-loss. On second test extra info fixed it.
 3. Default model choice for: explanation / reasoning / structure.
+- 
 4. Open questions heading into Week 2.
 *   **Ambiguity:**
     *   Avoid vague or open-ended questions. Be as specific as possible.

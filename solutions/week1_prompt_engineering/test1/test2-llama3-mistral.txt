@@ -1,0 +1,212 @@
+======================================================================
+PROMPT VARIANT: Simple
+======================================================================
+
+--- Querying Ollama (llama3) ---
+Response from Ollama (Llama3) (latency: 207.45s):
+A simple yet essential task! Boiling water is a fundamental process that involves heating water to its boiling point, which is 212°F (100°C) at sea level. Here's a step-by-step guide on how to boil water:
+
+**Equipment needed:**
+
+* A pot with a lid (preferably stainless steel or heat-resistant glass)
+* Water
+* A stove or electric kettle
+* Optional: a thermometer (if you want to check the temperature)
+
+**Instructions:**
+
+1. **Fill the pot with water**: Pour cold water into the pot until it's about 3/4 full.
+2. **Place the pot on the stove or electric kettle**: Position the pot on a medium-sized flame or heat setting, depending on your stove or electric kettle.
+3. **Turn on the heat**: If using a stove, turn the knob to the "on" position. If using an electric kettle, plug it in and select the desired temperature or mode (e.g., boiling).
+4. **Wait for the water to boil**: As the water heats up, you'll start to see bubbles forming at the bottom of the pot. When the bubbles rise to the surface and start popping, the water has reached a rolling boil.
+5. **Check the temperature (optional)**: If you have a thermometer, insert it into the water to ensure it's reached 212°F (100°C).
+6. **Turn off the heat**: Once the water is boiling, turn off the stove or electric kettle.
+7. **Let it cool slightly (optional)**: If you're planning to use the boiled water for cooking, let it cool down a bit before proceeding.
+
+**Tips and precautions:**
+
+* Always use cold water when filling the pot to prevent scalding.
+* Make sure the pot is secure on the stove or electric kettle to prevent it from sliding or falling off.
+* Be careful when removing the lid as steam will be released, and the water may still be hot.
+* Never leave boiling water unattended, as it can suddenly boil over and cause accidents.
+
+That's it! Boiling water is a simple process that requires attention to temperature and safety precautions.
+
+----------------------------------------
+
+--- Querying Ollama (mistral) ---
+Response from Ollama (Mistral) (latency: 148.16s):
+ To boil water, follow these steps:
+
+1. Find a pot: Choose a suitable pot that can hold the amount of water you want to boil. Make sure it has a lid for faster and more efficient heating.
+
+2. Fill the pot: Carefully pour cold water into the pot, up to the desired level.
+
+3. Place the pot on the stove: Put the pot on a burner or hot plate. If you're using an electric stove, choose a burner that fits the size of your pot.
+
+4. Turn on the heat: Adjust the heat setting to high. On gas stoves, you can use a medium-high flame; on electric stoves, set the temperature to high or maximum power.
+
+5. Wait for it to boil: Observe the water as it heats up. Small bubbles will initially form at the bottom of the pot, and they will increase in size and number as the water approaches a boil. The water is typically considered boiling when these bubbles vigorously break the surface.
+
+6. Cover the pot (optional): You can cover the pot with its lid if you'd like to speed up the process or conserve energy. However, be careful not to let the steam escape and burn yourself. If you notice that the water is boiling over, remove the lid for a moment before continuing to cook.
+
+7. Check the temperature: Once the water reaches a rolling boil, use a thermometer to verify that it has reached 212°F (100°C) if using Fahrenheit or 100°C if using Celsius. Keep in mind that at higher altitudes, water boils at lower temperatures than at sea level.
+
+8. Maintain the boil: If you need the water to continue boiling for a specific amount of time, lower the heat slightly to prevent it from evaporating too quickly. A gentle simmer is usually suitable for maintaining the boil while preventing excessive evaporation.
+
+9. Safety first: When handling hot pots and lids, use oven mitts or pot holders to protect your hands from burns. Additionally, keep children and pets a safe distance away from the stove while boiling water.
+
+----------------------------------------
+
+======================================================================
+PROMPT VARIANT: Role
+======================================================================
+
+--- Querying Ollama (llama3) ---
+Response from Ollama (Llama3) (latency: 178.15s):
+Boiling water! It's one of the most fundamental skills in the kitchen, and it's a great place to start for beginners. Boiling water is simple, yet essential for many recipes. So, let's get started!
+
+**Step 1: Choose Your Pot**
+
+For boiling water, you'll need a pot that can hold at least 2-3 quarts of water. A stainless steel or ceramic pot is ideal because they distribute heat evenly and won't react with the water like some metals might.      
+
+**Step 2: Fill 'er Up!**
+
+Place your chosen pot under the faucet and fill it with fresh, cold water. Don't overfill the pot, as you'll need to leave a little room at the top for the water to boil up.
+
+**Step 3: Put It on the Stove**
+
+Place the pot on your stovetop over high heat (or medium-high if you have a gas stove). You can use either an electric or gas range – just make sure it's set to the correct heat setting.
+
+**Step 4: Bring to a Boil**
+
+Wait for the water to start boiling. You'll know it's boiling when you see big bubbles rising to the surface and hear a gentle roar. This should take about 8-10 minutes, depending on your stovetop and pot size.
+
+**Tips and Tricks:**
+
+* Use cold water from the faucet. This helps the water boil more efficiently.
+* Don't overcrowd the pot with too much water. Leave some room at the top for the water to expand as it boils.
+* Keep an eye on the stove and adjust the heat if needed. You want a rolling boil, not just simmering water.
+* If you're unsure whether the water is boiling or not, give it a quick stir to see those big bubbles rising up.
+
+**Step 5: Let It Boil!**
+
+Once your water has reached a boil, let it keep boiling for at least 1-2 minutes. This ensures any bacteria or impurities in the water are killed. After that, you can turn off the heat and carefully remove the pot from the stove.
+
+And that's it! You've successfully boiled water. Now, go forth and cook up a storm with your perfectly boiled H2O!
+
+Remember, practice makes perfect, so don't be afraid to boil some more water as you get comfortable in the kitchen. Happy cooking!
+
+----------------------------------------
+
+--- Querying Ollama (mistral) ---
+Response from Ollama (Mistral) (latency: 152.84s):
+ To boil water, here's a simple step-by-step guide for beginners:
+
+1. Find a Pot and Kettle: First, you will need a pot that can hold the amount of water you want to boil. For boiling water quickly, using an electric kettle is most efficient. If you don't have one, you can use a regular pot on a stove.
+
+2. Fill the Pot or Kettle: Next, carefully fill your chosen vessel with cold tap water. Be sure not to overfill it, as this may cause water to spill over when boiling.
+
+3. Plug In the Electric Kettle (if using one): If you're using an electric kettle, connect it to a power source. Make sure the kettle is on a stable and heat-resistant surface.
+
+4. Turn on the Stove or Electric Kettle: For a pot on the stove, place it on a burner and turn the heat to medium or high, depending on your stove's intensity. If using an electric kettle, press the power button or flip the switch to turn it on.
+
+5. Wait for the Water to Boil: As you wait, you will notice small bubbles forming at the bottom of the pot or kettle. These are signs that the water is heating up. Once the bubbles become more frequent and larger, the water has reached a rolling boil. This usually takes around 3-5 minutes with an electric kettle, but it can take longer on a stove depending on the heat level and pot size.
+
+6. Turn off the Heat (for stovetop): When the water reaches a rolling boil, turn off the stove burner to prevent further overheating. If you're using an electric kettle, it will automatically turn off once the water has reached its boiling point.
+
+7. Use the Boiled Water: Carefully remove the pot or kettle from the heat source using a hot pad or oven mitt. Pour the boiled water into a heat-resistant container for safe handling.
+
+8. Safety First: Remember to always use caution when handling hot liquids and ensure that they are out of reach of children and pets.
+
+----------------------------------------
+
+======================================================================
+PROMPT VARIANT: Chain-of-Thought
+======================================================================
+
+--- Querying Ollama (llama3) ---
+Response from Ollama (Llama3) (latency: 140.07s):
+Here's a step-by-step guide on how to boil water:
+
+**Step 1: Choose a Pot**
+
+Select a clean, stainless steel or enamel-coated pot that is large enough to hold the amount of water you want to boil. Make sure the pot has a lid to help retain heat and prevent splashing.
+
+**Step 2: Fill the Pot with Water**
+
+Carefully fill the pot with fresh, cold water from your faucet. The ideal amount of water to start with is about 1-2 quarts (4-8 cups) for most households.
+
+**Step 3: Place the Pot on the Stovetop**
+
+Put the filled pot on the stovetop over high heat. Make sure the pot is centered and not tilted, which can cause the water to splash or boil unevenly.
+
+**Step 4: Turn On the Heat**
+
+Turn the stove burner to high heat (usually marked with a flame icon). You should start to see steam rising from the surface of the water as it begins to warm up.
+
+**Step 5: Wait for Boiling Point**
+
+Wait patiently for the water to reach its boiling point, which is typically around 212°F (100°C) at sea level. You'll know the water has reached boiling point when:
+
+* Large bubbles form rapidly and continuously rise to the surface.
+* The water starts to churn or froth vigorously.
+* A gentle rolling motion develops in the pot.
+
+**Step 6: Check the Temperature**
+
+If you're unsure whether the water has reached boiling point, you can use a thermometer to check the temperature. If it's not quite there, continue to wait and monitor the water until it reaches the desired temperature.
+
+**That's It!**
+
+Congratulations, you've successfully boiled water! The water is now hot enough for most cooking purposes, such as making tea, coffee, or soups. Be careful when handling hot pots and water to avoid burns or accidents.   
+
+----------------------------------------
+
+--- Querying Ollama (mistral) ---
+Response from Ollama (Mistral) (latency: 147.86s):
+ Step 1: Choose the right pot
+
+- Select a suitable pot that is appropriate for the amount of water you want to boil. A saucepan or a kettle would work well.
+
+Step 2: Fill the pot with water
+
+- Fill the pot with clean, cold water up to the desired level. Be sure not to fill it too high as boiling water expands.
+
+Step 3: Place the pot on a heat source
+
+- Place the filled pot on a stable and heat-resistant surface like a stove or an electric hot plate.
+
+Step 4: Turn on the heat source
+
+- Turn on your heat source to medium-high heat if using a stove, or press the 'boil' button if you are using an electric kettle.
+
+Step 5: Wait for the water to heat up
+
+- The water will begin to heat up and eventually reach its boiling point at 100 degrees Celsius (212 degrees Fahrenheit). This process can take a few minutes, depending on the amount of water and the power of your heat source.
+
+Step 6: Observe the bubbling
+
+- As the water approaches boiling, you will see small bubbles forming at the bottom of the pot and gradually expanding towards the surface. These bubbles are called nucleate boiling bubbles.
+
+Step 7: Reach boiling point
+
+- Once the water reaches its boiling point, it will start to vigorously boil with larger, more frequent bubbles breaking at the surface. At this stage, the water is now boiling and can be used for cooking, making tea, or other purposes that require hot water.
+
+Step 8: Regulate heat if necessary
+
+- If needed, you may want to reduce the heat slightly to prevent the water from overflowing or maintain a gentle simmer for specific recipes.
+
+Step 9: Cover the pot (optional)
+
+- In some cases, covering the pot can help speed up the boiling process by trapping more heat inside, but it's not always necessary.
+
+----------------------------------------
+
+SUMMARY (Model | Variant | Words | Latency | Preview)
+- Ollama (Llama3) | Simple | 335 | 207.45s | A simple yet essential task! Boiling water is a fundamental process that…
+- Ollama (Mistral) | Simple | 347 | 148.16s | To boil water, follow these steps: 1. Find a pot: Choose a suitable pot that…
+- Ollama (Llama3) | Role | 381 | 178.15s | Boiling water! It's one of the most fundamental skills in the kitchen, and it's…
+- Ollama (Mistral) | Role | 344 | 152.84s | To boil water, here's a simple step-by-step guide for beginners: 1. Find a Pot…
+- Ollama (Llama3) | Chain-of-Thought | 302 | 140.07s | Here's a step-by-step guide on how to boil water: **Step 1: Choose a Pot**…
+- Ollama (Mistral) | Chain-of-Thought | 321 | 147.86s | Step 1: Choose the right pot - Select a suitable pot that is appropriate for…

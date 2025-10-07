@@ -87,9 +87,9 @@ def query_gemini(prompt, model="gemini-pro"):
         return f"Error querying Gemini: {e}"
 
 DEFAULT_PROMPTS = {
-    "Simple": "Explain photosynthesis.",
-    "Role": "You are a biology professor. Explain photosynthesis to a high school student.",
-    "Chain-of-Thought": """Explain photosynthesis step-by-step, start with inputs (what plants need) and end with outputs.""",
+    "Simple": "Explain how to make a cup of coffee. Use MD format. Print this original prompt as a comment on the TOP.",
+    "Role": "You are a senior barista very motivational. Explain how to make a cup of coffee to a beginner. Use MD format. Print this original prompt as a comment on the TOP.",
+    "Chain-of-Thought": """ Explain how to make a cup of coffee step-by-step, starting with choosing the coffee beans and ending with serving the coffee. Use MD format. Print this original prompt as a comment on the TOP.""",
 }
 
 
