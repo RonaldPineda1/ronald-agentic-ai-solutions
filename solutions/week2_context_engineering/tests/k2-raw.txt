@@ -1,0 +1,99 @@
+$ python rag_lab.py --k 2 --no-context
+Knowledge base is already indexed.
+Params:  top_k=2, query=None, no_context=True
+
+--- Querying 1 for: 'How can I return a product?' ---
+
+Prompt:
+
+    You are a helpful FAQ assistant. A user has asked the following question:
+    'How can I return a product?'
+
+    
+
+    Based on this context, please provide a clear and concise answer. If the context is not relevant, say so.
+
+
+
+Answer:
+
+ Returning a product!
+
+To initiate a return, follow these steps:
+
+1. **Check your order**: Ensure you have all original packaging, accessories, and tags intact (if applicable).
+2. **Contact our customer service**: Reach out to us via phone, email, or live chat (if available) with the following information:
+        * Order number
+        * Product(s) you wish to return
+        * Reason for return (optional)
+3. **Get a Return Merchandise Authorization (RMA)**: We'll provide an RMA number and guide on how to proceed.
+4. **Ship the product**: Package the item securely and include all original materials (if applicable). Use a trackable shipping method and send it back to us at the provided return address.
+5. **Wait for your refund or exchange**: Once we receive the returned product, we'll process your request according to our return policy.
+
+Please note that return policies may vary depending on the seller, product type, and condition of the item. If you have any questions or concerns, feel free to ask!
+
+(Relevant context: I'm a helpful FAQ assistant, and the user asked about returning a product!),
+
+Citations: ['faq1', 'faq10']
+
+
+
+--- Querying 2 for: 'What's the process for tracking my package?' ---
+
+Prompt:
+
+    You are a helpful FAQ assistant. A user has asked the following question:
+    'What's the process for tracking my package?'
+
+
+
+    Based on this context, please provide a clear and concise answer. If the context is not relevant, say so.
+
+
+
+Answer:
+
+ Tracking your package is a crucial step in ensuring it arrives safely at its destination.
+
+To track your package, follow these steps:
+
+1. **Check the shipping carrier's website**: Visit the website of the shipping carrier you used (e.g., USPS, UPS, FedEx). 
+You'll typically need to enter the tracking number provided by the carrier.
+2. **Enter the tracking number**: Look for a unique tracking number or code on your shipping label, receipt, or confirmation email. 
+This is usually 1-20 characters long and starts with a letter (e.g., "USPS123456789").
+3. **Follow the prompts**: Once you enter the tracking number, follow the carrier's prompts to access your package's status.
+4. **Monitor your package's journey**: Track your package's location, estimated delivery date, and any updates on its status.
+
+Some popular shipping carriers' tracking websites include:
+
+* USPS (United States Postal Service): usps.com/track
+* UPS: ups.com/track
+* FedEx: fedex.com/track
+
+Remember to track your package regularly to stay informed about its whereabouts.,
+
+Citations: ['faq2', 'faq4']
+
+
+
+--- Querying 3 for: 'Do you ship to Canada?' ---
+
+Prompt:
+
+    You are a helpful FAQ assistant. A user has asked the following question:
+    'Do you ship to Canada?'
+
+
+
+    Based on this context, please provide a clear and concise answer. If the context is not relevant, say so.
+
+
+
+Answer:
+
+ Yes, we do ship to Canada! Our shipping rates and estimated delivery times are available for international destinations, including Canada.
+ You can expect your package to arrive within [insert timeframe] after processing and handling.
+ Please note that any applicable duties or taxes will be the responsibility of the recipient. 
+ If you have any further questions about shipping or would like a specific quote, please let us know!,
+
+Citations: ['faq3', 'faq8']

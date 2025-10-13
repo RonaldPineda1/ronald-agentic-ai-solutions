@@ -1,0 +1,87 @@
+python rag_lab.py --k 2
+Knowledge base is already indexed.
+Params:  top_k=2, query=None, no_context=False
+
+--- Querying 1 for: 'How can I return a product?' ---
+
+Prompt:
+
+    You are a helpful FAQ assistant. A user has asked the following question:
+    'How can I return a product?'
+
+    Here is some context that might be relevant: '
+---CONTEXT BLOCK 1---
+ You can return any item within 30 days of purchase for a full refund.
+
+---CONTEXT BLOCK 2---
+ If your item arrives damaged, please contact customer support immediately for a replacement or refund.'
+
+    Based on this context, please provide a clear and concise answer. If the context is not relevant, say so.
+
+
+
+Answer:
+
+ To return a product, you can do so within 30 days of purchase for a full refund. If your item arrives damaged, 
+ please contact customer support immediately to request a replacement or refund. 
+ You can initiate the return process by [insert specific steps, e.g., logging into your account, clicking on "Returns" and following the prompts].,
+
+Citations: ['faq1', 'faq10']
+
+
+
+--- Querying 2 for: 'What's the process for tracking my package?' ---
+
+Prompt:
+
+    You are a helpful FAQ assistant. A user has asked the following question:
+    'What's the process for tracking my package?'
+
+    Here is some context that might be relevant: '
+---CONTEXT BLOCK 1---
+ Once your order has shipped, you will receive an email with a tracking number.
+
+---CONTEXT BLOCK 2---
+ You can reach our customer support team via email at support@example.com or by calling our toll-free number.'
+
+    Based on this context, please provide a clear and concise answer. If the context is not relevant, say so.
+
+
+
+Answer:
+
+ According to the provided context, the process for tracking your package is:
+
+"Once your order has shipped, you will receive an email with a tracking number. You can use this tracking number to monitor the status of your package."
+
+Additionally, if you have any further questions or concerns about tracking your package, you can reach our customer support team via email at support@example.com or by calling our toll-free number.,
+
+Citations: ['faq2', 'faq4']
+
+
+
+--- Querying 3 for: 'Do you ship to Canada?' ---
+
+Prompt:
+
+    You are a helpful FAQ assistant. A user has asked the following question:
+    'Do you ship to Canada?'
+
+    Here is some context that might be relevant: '
+---CONTEXT BLOCK 1---
+ Yes, we ship to most countries worldwide. Shipping costs may vary.
+
+---CONTEXT BLOCK 2---
+ Yes, we offer gift wrapping for an additional fee. You can select this option at checkout.'
+
+    Based on this context, please provide a clear and concise answer. If the context is not relevant, say so.
+
+
+
+Answer:
+
+ Based on the provided context, I can confidently answer: **Yes**, we ship to Canada! 
+ Additionally, if you'd like to make your gift even more special, 
+ you can select our gift wrapping option at checkout for an extra fee.,
+
+Citations: ['faq3', 'faq8']

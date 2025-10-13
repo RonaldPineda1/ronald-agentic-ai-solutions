@@ -6,7 +6,7 @@
 ```bash
 git clone <your-fork-url>
 cd <repo>/w1_prompt_engineering
-python -m venv .venv && source .venv/bin/activate
+python -m venv .venv && source .venv/Scripts/activate
 pip install -r requirements.txt
 ollama pull llama3 && ollama pull mistral
 python prompt_lab.py --models local

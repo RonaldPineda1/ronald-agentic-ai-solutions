@@ -1,0 +1,114 @@
+$ python rag_lab.py --k 4
+Knowledge base is already indexed.
+Params:  top_k=4, query=None, no_context=False
+
+--- Querying 1 for: 'How can I return a product?' ---
+
+Prompt:
+
+    You are a helpful FAQ assistant. A user has asked the following question:
+    'How can I return a product?'
+
+    Here is some context that might be relevant: '
+---CONTEXT BLOCK 1---
+ You can return any item within 30 days of purchase for a full refund.
+
+---CONTEXT BLOCK 2---
+ If your item arrives damaged, please contact customer support immediately for a replacement or refund.
+
+---CONTEXT BLOCK 3---
+ You can reach our customer support team via email at support@example.com or by calling our toll-free number.
+
+---CONTEXT BLOCK 4---
+ Once your order has shipped, you will receive an email with a tracking number.'
+
+    Based on this context, please provide a clear and concise answer. If the context is not relevant, say so.
+
+
+
+Answer:
+
+ To return a product, you can do the following:
+
+1. Check if your item arrives damaged or defective. If it does, 
+contact our customer support team immediately at support@example.com or by calling our toll-free number for a replacement or refund.
+2. If your item is in its original condition and within 30 days of purchase, you can initiate the return process.
+
+To start the return process, please reach out to our customer support team via email at support@example.com or by calling our toll-free number. 
+We'll guide you through the process and provide a return shipping label if needed.
+
+Note: Once your order has shipped, you will receive an email with a tracking number, which is helpful in initiating the return process.,
+
+Citations: ['faq1', 'faq10', 'faq4', 'faq2']
+
+
+
+--- Querying 2 for: 'What's the process for tracking my package?' ---
+
+Prompt:
+
+    You are a helpful FAQ assistant. A user has asked the following question:
+    'What's the process for tracking my package?'
+
+    Here is some context that might be relevant: '
+---CONTEXT BLOCK 1---
+ Once your order has shipped, you will receive an email with a tracking number.
+
+---CONTEXT BLOCK 2---
+ You can reach our customer support team via email at support@example.com or by calling our toll-free number.
+
+---CONTEXT BLOCK 3---
+ You can apply your discount code in the 'Promo Code' box at checkout.
+
+---CONTEXT BLOCK 4---
+ You can return any item within 30 days of purchase for a full refund.'
+
+    Based on this context, please provide a clear and concise answer. If the context is not relevant, say so.
+
+
+
+Answer:
+
+ Based on the provided context, here's a clear and concise answer:
+
+"To track your package, once it has shipped, you will receive an email with a tracking number. 
+You can use this number to monitor the status of your package through our shipping carrier's website 
+or by contacting our customer support team via email at [support@example.com](mailto:support@example.com) or by calling our toll-free number.",
+
+Citations: ['faq2', 'faq4', 'faq9', 'faq1']
+
+
+
+--- Querying 3 for: 'Do you ship to Canada?' ---
+
+Prompt:
+
+    You are a helpful FAQ assistant. A user has asked the following question:
+    'Do you ship to Canada?'
+
+    Here is some context that might be relevant: '
+---CONTEXT BLOCK 1---
+ Yes, we ship to most countries worldwide. Shipping costs may vary.
+
+---CONTEXT BLOCK 2---
+ Yes, we offer gift wrapping for an additional fee. You can select this option at checkout.
+
+---CONTEXT BLOCK 3---
+ If your order has not yet shipped, you can contact customer support to update your shipping address.
+
+---CONTEXT BLOCK 4---
+ We accept all major credit cards, PayPal, and Apple Pay.'
+
+    Based on this context, please provide a clear and concise answer. If the context is not relevant, say so.
+
+
+
+Answer:
+
+ Based on the provided context, I can confidently answer:
+
+**Yes, we ship to Canada!**
+
+Additionally, if you need any changes to your shipping address or have questions about our shipping costs, feel free to reach out to customer support.,
+
+Citations: ['faq3', 'faq8', 'faq6', 'faq5']

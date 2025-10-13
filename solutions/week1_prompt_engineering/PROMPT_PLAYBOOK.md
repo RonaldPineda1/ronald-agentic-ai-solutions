@@ -20,7 +20,6 @@ hallucination, verbosity, shallow, drift (format), persona-loss, json-break, con
 
 ## Results Table (Populate During Lab)
 | Prompt Pattern | Example Used | Model | Adherence (1–5) | Reasoning (1–5) | Style (1–5) | Format (1–5) | Failure Modes | Notes | Reuse? (Y/N) |
-| Prompt Pattern | Example Used | Model | Adherence (1–5) | Reasoning (1–5) | Style (1–5) | Format (1–5) | Failure Modes | Notes | Reuse? (Y/N) |
 |----------------|---------------|--------|------------------|-----------------|--------------|---------------|----------------|--------|---------------|
 | Simple | Explain how to make a cup of coffee. | llama3 | 5 | 5 | 5 | 5 | verbosity | used 2 methods | |
 | Role | You are a cooking instructor. Explain how to boil water to a beginner. | llama3 | 5 | 5 | 5 | 5 | | | |
@@ -104,3 +103,30 @@ Answer briefly:
     *   Break down complex tasks into smaller, more manageable prompts.
 
 ---
+
+# Week2
+
+##  Evaluation & Logging
+| Query | Mode (raw/RAG) | k | Retrieved IDs | Strengths | Weaknesses | Failure Modes | Notes |
+|-------|----------------|---|---------------|-----------|------------|---------------|-------|
+| How can I return a product? | RAG | 2 | ['faq1', 'faq10'] | Concise | Irrelevant | Irrelevant | Added unrelated section `You can initiate the return process by [insert specific steps, e.g., logging into your account, clicking on "Returns" and following the prompts]` |
+| What's the process for tracking my package? | RAG | 2 | ['faq2', 'faq4'] | Concise |  |  | LLM replied not in ROLE: According to the provided context, the process for tracking your package is: |
+| Do you ship to Canada? | RAG | 2 | ['faq3', 'faq8'] | Concise | Irrelevant | Irrelevant | Unnecessary comment: `Additionally, if you'd like to make your gift even more special, you can select our gift wrapping option at checkout for an extra fee.` |
+| How can I return a product? | raw | 2 | ['faq1', 'faq10'] |  | Verbose | Verbose | General non-specific steps that might apply to this query. |
+| What's the process for tracking my package? | raw | 2 | ['faq2', 'faq4'] |  | Irrelevant | Irrelevant | General non-specific steps that might apply to this query. |
+| Do you ship to Canada? | raw | 2 | ['faq3', 'faq8'] |  | Irrelevant, Verbose | Irrelevant, Verbose | It mentioned it ships to Canada with no context. Answer included placeholders such as: `You can expect your package to arrive within [insert timeframe]` |
+| How can I return a product? | RAG | 4 | ['faq1', 'faq10', 'faq4', 'faq2'] |  | Irrelevant, Verbose | Irrelevant, Verbose | Mentioned optional to contact support team. |
+| What's the process for tracking my package? | RAG | 4 | ['faq2', 'faq4', 'faq9', 'faq1'] |  | Irrelevant, Verbose | Irrelevant, Verbose |  |
+| Do you ship to Canada? | RAG | 4 | ['faq3', 'faq8', 'faq6', 'faq5'] |  | Irrelevant | Irrelevant | Added unnecessary suggestion to contact support |
+| How can I return a product? | raw | 4 | ['faq1', 'faq10', 'faq4', 'faq2'] |  | Irrelevant, Verbose | Irrelevant, Verbose | General non-specific steps that might apply to this query. |
+| What's the process for tracking my package? | raw | 4 | ['faq2', 'faq4', 'faq9', 'faq1'] |  | Irrelevant, Verbose | Irrelevant, Verbose | General non-specific steps that might apply to this query. |
+| Do you ship to Canada? | raw | 4 | ['faq3', 'faq8', 'faq6', 'faq5'] |  | Irrelevant, Verbose | Irrelevant, Verbose | Replied “Easy one!”. Unnecessary info about rates might vary. |
+
+
+##  Reflection Prompts
+- Where did additional context hurt answer quality?
+    Yes, RAG with topk higher added more verbosity.
+- Which failure mode appeared most often?
+    Irrelevant, Verbose
+- What is your next improvement priority & why?
+    
