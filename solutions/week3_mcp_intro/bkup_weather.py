@@ -7,7 +7,6 @@ Features:
 
 NOTE: This is a simplified stand-in illustrating *concepts* of MCP. Replace with actual MCP library integration if/when adopted.
 """
-
 from __future__ import annotations
 import argparse
 import json
@@ -16,30 +15,11 @@ import time
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from typing import Dict, Any
 
-VALID_CITIES = {
-    "Paris",
-    "Madrid",
-    "London",
-    "New York",
-    "Tokyo",
-    "Berlin",
-    "Madrid",
-    "Rome",
-    "Sydney",
-    "Toronto",
-    "Singapore",
-}
-
 TOOL_DESCRIPTOR: Dict[str, Any] = {
     "name": "get_weather",
     "description": "Return current (mock) weather conditions for a given city.",
     "inputs": [
-        {
-            "name": "city",
-            "type": "string",
-            "required": True,
-            "description": "City name (ASCII)",
-        }
+        {"name": "city", "type": "string", "required": True, "description": "City name (ASCII)"}
     ],
     "outputs": {
         "type": "object",
@@ -48,27 +28,19 @@ TOOL_DESCRIPTOR: Dict[str, Any] = {
             "temp_c": {"type": "number"},
             "conditions": {"type": "string"},
             "source": {"type": "string"},
-            "timestamp": {"type": "integer"},
+            "timestamp": {"type": "integer"}
         },
-        "required": ["city", "temp_c", "conditions", "timestamp"],
-    },
+        "required": ["city", "temp_c", "conditions", "timestamp"]
+    }
 }
 
 CONDITIONS = ["Sunny", "Cloudy", "Rain", "Storm", "Windy", "Partly Cloudy"]
-
 
 # Deterministic-ish mapping for repeat runs (seeded by city hash)
 def invoke_get_weather(city: str) -> Dict[str, Any]:
     if not city or not city.strip():
         raise ValueError("city parameter required")
-
-    city_clean = city.strip().title()
-    if city_clean not in VALID_CITIES:
-        raise ValueError(
-            f"Unknown city '{city}'. "
-            f"Valid options: {', '.join(sorted(VALID_CITIES))}."
-        )
-    seed = abs(hash(city)) % (10**6)
+    seed = abs(hash(city)) % (10 ** 6)
     rng = random.Random(seed)
     temp = round(rng.uniform(5, 32), 1)
     cond = CONDITIONS[seed % len(CONDITIONS)]
@@ -77,15 +49,13 @@ def invoke_get_weather(city: str) -> Dict[str, Any]:
         "temp_c": temp,
         "conditions": cond,
         "source": "mock-weather-service",
-        "timestamp": int(time.time()),
+        "timestamp": int(time.time())
     }
-
 
 class WeatherHandler(BaseHTTPRequestHandler):
     def do_GET(self):  # noqa: N802
         if self.path.startswith("/weather"):
             # naive query parsing: /weather?city=Paris
-            print(f"Using GET /weather")
             try:
                 query = self.path.split("?", 1)[1] if "?" in self.path else ""
                 params = dict(p.split("=", 1) for p in query.split("&") if p)
@@ -122,9 +92,7 @@ def serve(port: int):
 
 def main():
     parser = argparse.ArgumentParser(description="Mock MCP weather tool")
-    parser.add_argument(
-        "--serve-api", action="store_true", help="Run simple HTTP server"
-    )
+    parser.add_argument("--serve-api", action="store_true", help="Run simple HTTP server")
     parser.add_argument("--port", type=int, default=8765, help="Port for HTTP server")
     parser.add_argument("--city", type=str, help="Direct invocation mode – city name")
     args = parser.parse_args()

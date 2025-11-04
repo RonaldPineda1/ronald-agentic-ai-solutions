@@ -130,3 +130,19 @@ Answer briefly:
     Irrelevant, Verbose
 - What is your next improvement priority & why?
     
+
+
+
+# WEEK 3
+| Query | Intent Parsed | Tool? | Tool Latency ms | Success | Answer Quality (1–5) | Notes |
+|--------|----------------|-------|-----------------|----------|----------------------|--------|
+| hey there |  | NO | 0 | TRUE | 5 | "answer": "I can provide weather (e.g., 'weather in Madrid') and local time (e.g., 'time in Europe/Madrid' or 'time in Madrid')." |
+| What is the weather in Limon | get_weather | NO | 2104 | TRUE | 5 | """error"": ""get_weather (HTTP 400): Unknown city 'Limon'. Valid options: Berlin, London, Madrid, New York, Paris, Rome, Singapore, Sydney, Tokyo, Toronto."",<br>""answer"": ""One or more tools failed:\n• get_weather (HTTP 400): Unknown city 'Limon'. Valid options: Berlin, London, Madrid, New York, Paris, Rome, Singapore, Sydney, Tokyo, Toronto.""" |
+| What weather in London | get_weather | YES | 2114 | TRUE | 5 | "answer": "Results: <br>- According to Weather tool the temperature and weather for London is 26.4°C, Rain. (Source: mock-weather-service)." |
+| weather in Rome | get_weather | YES | 2109 | TRUE | 5 | "answer": "Results: <br>- According to Weather tool the temperature and weather for Rome is 8.0°C, Storm. (Source: mock-weather-service)." |
+| weather in tokyo | get_weather | YES | 2092 | TRUE | 5 | "answer": "Results: <br>- According to Weather tool the temperature and weather for tokyo is 6.5°C, Rain. (Source: mock-weather-service)." |
+| weather and time in Berlin | get_weather, get_time | YES | 2131 | TRUE | 5 | "answer": "Results: <br>- According to https://worldtimeapi.org/api/timezone tool the Local time in Europe/Berlin: 2025-11-04 03:48:20.820467+01:00 CET (UTC+01:00). <br>- According to Weather tool the temperature and weather for Berlin is 23.3°C, Partly Cloudy. (Source: mock-weather-service)." |
+| weather and time in Sydney | get_weather, get_time | YES | 2115 | TRUE | 5 | "answer": "Results: <br>- According to https://worldtimeapi.org/api/timezone tool the Local time in Australia/Sydney: 2025-11-04 13:51:38.344201+11:00 AEDT (UTC+11:00). <br>- According to Weather tool the temperature and weather for Sydney is 6.1°C, Partly Cloudy. (Source: mock-weather-service)." |
+| weather and time in Toronto | get_weather, get_time | YES | 2093 | TRUE | 5 | "answer": "Results: <br>- According to https://worldtimeapi.org/api/timezone tool the Local time in America/Toronto: 2025-11-03 21:52:31.308308-05:00 EST (UTC-05:00). <br>- According to Weather tool the temperature and weather for Toronto is 29.2°C, Partly Cloudy. (Source: mock-weather-service)." |
+
+
